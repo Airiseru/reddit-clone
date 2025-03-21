@@ -44,7 +44,7 @@ async def main(page: ft.Page):
         await starting_screen()
 
     async def on_logout(e):
-        toggle_login_buttons()
+        await toggle_login_buttons()
     
     async def toggle_login_buttons():
         login_button.visible = page.auth is None
